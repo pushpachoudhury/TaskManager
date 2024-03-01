@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To-Do List</title>
+    
+    <link rel="stylesheet" type="text/css" href="taskStylesheet.css">
+    <script src="taskManager.js" defer></script>
+</head>
+<body style="background-color: pink;">
+    <h1 style="text-align: center; color: white;">To-Do List:</h1>
+    
+    
+        <form id="taskForm" style="text-align: center; color: white;">
+            <label style="color: white;" for="task">Task Title:</label>
+            <input type="text" id="task" name="task">
+    
+            <label for="priority">Priority Level:</label>
+            <select id="priority" name="priority">
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+
+            <label for="status">Status:</label>
+            <input type="radio" id="completed" name="status" value="Completed">
+            <label for="completed">Completed</label> 
+            <input type="radio" id="status" name="status" value="Pending">
+            <label for="status">Pending</label>
+
+            <input type="submit" name="Submit">
+        </form>
+   
+        <ol id="taskList">
+        </ol>
+</body>
+</html>
